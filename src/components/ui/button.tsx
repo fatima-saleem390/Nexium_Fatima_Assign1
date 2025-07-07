@@ -1,13 +1,16 @@
-// src/components/ui/button.tsx
-import React from "react";
+'use client';
+
+import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export function Button(props: ButtonProps) {
+export function Button({ children, ...props }: ButtonProps) {
   return (
     <button
       {...props}
-      className="border rounded px-3 py-2 w-full bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
+      className="w-full bg-amber-300 hover:bg-amber-400 text-amber-900 font-semibold py-3 rounded-lg transition"
+    >
+      {children}
+    </button>
   );
 }

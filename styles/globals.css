@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans text-gray-100 bg-black bg-cover bg-center;
+  background-image: url('/bg-dark.jpg');
+  background-attachment: fixed; /* Helps keep image in background */
+}
